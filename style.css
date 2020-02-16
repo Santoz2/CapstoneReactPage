@@ -1,0 +1,355 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #0069c0;
+}
+
+.mask {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+    background-color: #0069c0;
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+}
+
+.jumbotron h1 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 700;
+}
+
+.seperator {
+    padding-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.card-top-bg {
+    background-color: #6ec6ff;
+    height: 1rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-head {
+    padding-bottom: .7rem;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 1rem;
+}
+
+.card-head * {
+    display: inline;
+}
+
+.card h5 {
+    font-weight: bold;
+}
+
+.card-body .btn {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.card-icon {
+    margin-top: 6px;
+    float: right;
+}
+
+#quote {
+    font-size: 18pt;
+}
+
+.card-body p {
+    font-size: 16pt;
+}
+
+/*
+.card img {
+    margin-left: -30px;
+}
+*/
+
+#report-success-btn {
+    animation: rotation 3s infinite linear;
+  }
+  
+@keyframes rotation {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(5deg);
+    }
+  }
+
+#left-pick, #right-pick {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    padding: 6px;
+}
+
+#date-pick {
+    text-align: center;
+    display: inline-block;
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.report-date-picker {
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0;
+    margin-top: -1rem;
+}
+
+.btn-report {
+    font-size: 18pt;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+main {
+    background-color: white;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+footer {
+    background-color: #0069c0;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.vis-image {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: none;
+    width: 100%;
+    padding-top: 57%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#causes-vis {
+    background-image: url('../img/causes_vis.png');
+    padding-top: 65.5%;
+}
+
+#actions-vis {
+    background-image: url('../img/actions_vis.png');
+    padding-top: 86.83%;
+}
+
+#calendar-view {
+    /*background-image: url('../img/30_day_view.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 57.1%;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-streak-count {
+    color: #e53935;
+    padding-bottom: 0rem;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 21pt;
+    margin-top: -.5rem;
+}
+
+#calendar-table {
+    table-layout: fixed;
+}
+
+th, td {
+    font-size: 12pt;
+    text-align: center;
+    position: relative;
+    padding: .4rem 0;
+    min-height: 100px;
+}
+
+.day {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+}
+
+.streak-day {
+    color: white;
+    z-index: 10;
+    position: absolute;
+    margin: 0 auto;
+    display: inline-block;
+    left: 0;
+    right: 0;
+}
+
+.streak-day-circle {
+    background-color: #0069C0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -4px;
+}
+
+.cal-table {
+    width: 100%;
+}
+
+tr {
+    height: 2.2rem;
+}
+
+.streak-day-prev {
+    background-color: #0069C0;
+    height: 13px;
+    width: 50%;
+    border-radius: 10%;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 0;
+    margin-top: 6px;
+}
+
+.streak-day-next {
+    background-color: #0069C0;
+    height: 13px;
+    width: 50%;
+    border-radius: 10%;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 0 0 auto;
+    margin-top: 6px;
+}
+
+.calendar-title {
+    font-size: 16pt;
+    font-weight: bold;
+    display: inline-block;
+    margin: 1rem auto .5rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+.today-circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    margin-top: -4px;
+}
+
+.current-circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #e53935;
+    margin-top: -4px;
+}
+
+.setback-dialog {
+    width: 80%;
+    left: 10%;
+    z-index: 100001;
+    position: absolute;
+    top: 10%;
+}
+
+/*
+I have many media queries in the form of "col-lg" in bootstrap,
+this part is to hide the graphs when the screen is too small to
+interpret them.
+*/
+@media (min-width: 768px) {
+    .vis-image {
+        display: block;
+    }
+
+    .no-vis-list {
+        display: none;
+    }
+}
+
+#causes-report-list {
+    font-size: 16pt;
+}
+
+.instruction {
+    font-size: 12pt;
+    line-height: 2rem;
+}

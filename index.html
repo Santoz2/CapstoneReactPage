@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Landing Page for the Dream Treeam's Vision Project">
+    <meta name="keywords" content="The Dream Treeam, Vision, Climate Change, Environment">
+    <meta name="author" content="Zaijen Santos, Kevin Jerauld, Howard Pu, Kishore Vasan">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="icon" type="image/png" href="img/iconfinder_ic_settings_24px.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Open+Sans" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Vision by The Dream Treeam</title>
+</head>
+<style>
+    .parallax {
+        /* The image used */
+        background-image: url("./kevBanner.jpg");
+
+        /* Set a specific height */
+        min-height: 500px;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .nav-item {
+        font-size: 1.3vw;
+    }
+
+
+    @media (max-width: 768px) {
+        .nav-item {
+            font-size: 2vw;
+        }
+
+        /* 
+    .image {
+        width: 500px;
+        height: 100%;
+    } */
+    }
+
+    /*Font*/
+    body,
+    input,
+    select,
+    textarea {
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        font-size: 13pt;
+        font-weight: 400;
+        line-height: 2em;
+    }
+
+
+
+
+
+
+
+    @media screen and (max-width: 1280px) {
+
+        .clear-section {
+            padding: 7em 0 11em 0;
+        }
+
+        .clear-section h2 {
+            font-size: 2.5em;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        .clear-section {
+            padding: 6em 0 7em 0;
+        }
+
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .clear-section {
+            padding: 5em 2em 6em 2em;
+        }
+
+        .clear-section br {
+            display: none;
+        }
+
+        .clear-section h2 {
+            font-size: 2.25em;
+        }
+
+        .clear-section p {
+            font-size: 1.25em;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+
+        .clear-section {
+            padding: 4em 2em 4em 2em;
+        }
+
+    }
+
+    /* Makes the header translucent*/
+    #top-banner,
+    .clear-section {
+        background-color: rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        /* RGB of 0,0,0 is black. */
+    }
+
+    /* Custom styling for the buttons */
+    .btn {
+        text-transform: uppercase;
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        font-size: 13pt;
+        font-weight: 400;
+        line-height: 2em;
+    }
+
+    /* Returns main landmark to blank background */
+    main {
+        background-color: transparent;
+    }
+
+    /* Heeading Level 2 Style */
+    h2 {
+        font-size: 2.5em;
+        text-transform: uppercase;
+    }
+
+    /* Section One Style */
+    #one {
+        color: #777;
+        background-color: white;
+        text-align: center;
+        /* padding: 50px 80px; */
+        text-align: justify;
+        padding: 6em 0 4em 0
+    }
+
+    /* Styling for the Banner*/
+    .clear-section {
+        padding: 10em 0 13em 0;
+        background-attachment: fixed;
+        background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        background-position: center top;
+        background-size: cover;
+        line-height: 1.75;
+        text-align: center;
+    }
+
+    .clear-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .clear-section h2 {
+        color: #ffffff;
+        display: inline-block;
+        font-size: 3.5em;
+        line-height: 1.35;
+        margin-bottom: 0.5em;
+    }
+
+    .clear-section p {
+        color: #aaa;
+        font-size: 1.5em;
+        margin-bottom: 1.75em;
+        text-transform: uppercase;
+    }
+
+    /*Spacing for the sub description */
+    #sub-description {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        padding-right: 2em;
+    }
+
+    @media (max-width: 978px) {
+        #sub-description {
+            padding-right: 0em;
+        }
+    }
+
+    /*Font size for the heading in the bottom section*/
+    #two h2 {
+        font-size: 2.5em;
+    }
+
+    /* Fixes padding in the bottom section */
+    #two {
+        padding: 6em 0 6em 0;
+    }
+</style>
+
+<body class="parallax">
+    <header>
+        <div id="top-banner" class="navbar navbar-expand-md navbar-dark sticky-top">
+            <div class="container-fluid">
+                <h1 class="navbar-brand"><strong><a class="text-white" href="index.html">Vision</a></strong> by The
+                    Dream Treeam</h1>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <nav class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto mr-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Banner -->
+        <section class="clear-section">
+            <h2>Empowering the Environment, Together</h2>
+            <p>Build a community of climate enthusiasts, <br /> challenge your friends, and create change.
+
+            </p>
+            <!-- <ul class="actions">
+            <li><a href="#" class="button special big">Explore Our Vision</a></li>
+        </ul> -->
+
+            <button type="button" class="btn btn-danger">Explore Our Vision</button>
+        </section>
+
+        <!-- One -->
+        <section id="one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-dark">About Vision</h2>
+                        <p id="sub-description">
+                            The International Platform Connecting YOU to Others Around the World... See a brighter
+                            future with VISION!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Here at VISION we see the hope for a greener tomorrow. However… to reach this future we need
+                            your help. There is no Earth 2. If our environmental
+                            conditions continue to decline as they have been, there will be no going back. Together we
+                            can
+                            all join one VISION to guide our communities to a
+                            future in which the Earth and people live hand in hand with sustainability at the core.
+                        </p>
+                        <p>
+                            With VISION join a community of others who want to make small changes in their everyday
+                            lives to
+                            help save our planet. Complete goals, join communities,
+                            and work together to inspire change. The VISION Movement seeks to help show the world that
+                            when
+                            working together, people have the potential to a million
+                            little drops in the bucket into a flood of change. We will be the difference we want to see
+                            in
+                            this world. The only question is -- do you want to help
+                            VISION see this future?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section id="two" class="clear-section">
+            <div class="container-fluid">
+                <h2>Have Any Questions?</h2>
+                <p>Feel Free to Contact Us!</p>
+                <button type="button" class="btn btn-danger">Get in Touch</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <ul class="icons">
+                <li><a href="#" class="icon fa-facebook"></a></li>
+                <li><a href="#" class="icon fa-twitter"></a></li>
+                <li><a href="#" class="icon fa-instagram"></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; The Dream Treeam </li>
+                <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Scripts
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+-->
+    <!-- <div class="mask d-none"></div>
+
+    <header role="banner">
+        <div class="jumbotron jumbotron-fluid p-4 m-0">
+            <div class="container">
+                <h1 class="display-6">Write Every Morning - Habit Developer</h1>
+                <p class="lead">Making you a better writer, one day at a time</p>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <div class="container">
+            <section>
+                <h2 class="seperator">Welcome back, Pierce!</h2>
+                <div class="row">
+                    <div class="col col-12 col-lg-6 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Instructions</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <p class="instructions">
+                                    Hello! Welcome to <em>Write Every Morning</em>. <br />
+                                    To get started, try recording
+                                    that you accomplished your goal today by pressing the <strong>"Success!"</strong>
+                                    button.<br />
+                                    Or, if you didn't accomplish your goal for today, you can press the
+                                    <strong>"Setback"</strong> button
+                                    to record the reasons why so that you can know how to do better next time! <br />
+                                    You can also navigate using the <strong>arrow buttons</strong> to record
+                                    successes/setbacks from
+                                    previous days if you've already gotten started.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col col-12 col-lg-6 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Your Streak</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <div class="card-streak-count d-none">Current: 6 Days!</div>
+                                <div id="calendar-view" aria-live="polite"
+                                    aria-label="View of your streak on a calendar">
+                                    <div id="calendar-title"></div>
+                                    <table id="calendar-table" class="cal-table">
+                                        <thead>
+                                            <tr>
+                                                <th>S</th>
+                                                <th>M</th>
+                                                <th>T</th>
+                                                <th>W</th>
+                                                <th>T</th>
+                                                <th>F</th>
+                                                <th>S</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="calendar-body" aria-live="polite">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-6 d-flex" id="report-card">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Daily Report</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <div class="report-date-picker">
+                                    <button class="btn btn-outline-dark" id="left-pick">&lt;</button>
+                                    <h6 id="date-pick" aria-live="polite">Today</h6>
+                                    <button class="btn btn-outline-dark" id="right-pick">&gt;</button>
+                                </div>
+                                <button class="btn btn-success btn-report" role="button"
+                                    id="report-success-btn">Success!</button>
+                                <button class="btn btn-danger btn-report" role="button"
+                                    id="report-setback-btn">Setback</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-6 d-flex" id="habit-card">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Your Habit</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text" id="quote">"I will write <strong>100 words</strong> on my
+                                    laptop
+                                    at <strong>8am</strong> every morning at my desk."</p>
+                                <a href="#" role="button" class="btn btn-primary">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-6 d-none" id="reason-card" aria-live="polite">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <h5 class="card-title">Setback - That's OK!</h5>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text">So you missed a day, that's alright! Time to get started on
+                                    another
+                                    streak. Here is what caused this setback for you:
+                                </p>
+                                <ol id="causes-report-list">
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="seperator">Insights</h2>
+                <div class="row">
+                    <div class="col col-12 col-lg-6 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Causes of Setbacks</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <div class="vis-image" id="causes-vis"
+                                    aria-label="Visualization of the most common causes of your setbacks so tht you know what to work on!">
+                                </div>
+                                <ol class="no-vis-list">
+                                    <li>Forgot</li>
+                                    <li>Distracted</li>
+                                    <li>No Motivation</li>
+                                    <li>Tired</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-lg-6 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Most Effective Actions</p>
+                                    <img class="card-icon" src="img/settings_gray_icon.png"
+                                        alt="Streak Display Settings">
+                                </div>
+                                <div class="vis-image" id="actions-vis"
+                                    aria-label="Visualization of your most effective actions, which ones lead to the highest streaks">
+                                </div>
+                                <ol class="no-vis-list">
+                                    <li>Write Implementation Intentions</li>
+                                    <li>Lower My Words Goal</li>
+                                    <li>Wake Up Earlier</li>
+                                    <li>Reward Yourself for Success</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2 class="seperator">Suggestions</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Motivation</p>
+                                    <img class="card-icon" src="img/reload_gray_icon.png" alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text">“You can always edit a bad page. You can’t edit a blank
+                                    page.”</p>
+                                <p class="card-text">― Jodi Picoult</p>
+                                <a href="#" role="button" class="btn btn-primary">Pin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Tired?</p>
+                                    <img class="card-icon" src="img/reload_gray_icon.png" alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text"><strong>Try this:</strong> Keep a glass of ice water next
+                                    to your
+                                    alarm and drink it first thing in the morning.</p>
+                                <a href="#" role="button" class="btn btn-primary">Done!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Too hard?</p>
+                                    <img class="card-icon" src="img/reload_gray_icon.png" alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text"><strong>Try this:</strong> Make your word-count goal
+                                    smaller!
+                                    Changing
+                                    from <em>100 words</em> to <em>50 words</em> will make it so easy you can't
+                                    say no.
+                                </p>
+                                <a href="#" role="button" class="btn btn-primary">Done!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="card d-flex w-100">
+                            <div class="card-img-top card-top-bg">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-head">
+                                    <p class="card-title">Forgetful?</p>
+                                    <img class="card-icon" src="img/reload_gray_icon.png" alt="Streak Display Settings">
+                                </div>
+                                <p class="card-text"><strong>Try this:</strong> Set up your alarm clock on top
+                                    of
+                                    <em>your
+                                        laptop</em>, that way when you turn off your alarm you'll have a visual
+                                    reminder to
+                                    write!</p>
+                                <a href="#" role="button" class="btn btn-primary">Done!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright 2019 - <a href="mailto:pcave@uw.edu">Pierce Cave</a></p>
+    </footer>
+
+    <div class="card setback-dialog d-none" aria-live="polite">
+        <div class="card-img-top card-top-bg">
+        </div>
+        <div class="card-body">
+            <div class="card-head">
+                <p class="card-title">Report for 2/19/2019</p>
+                <input type="image" class="card-icon" id="setback-dialog-x-btn" src="img/x-icon24.png"
+                    alt="Streak Display Settings" />
+            </div>
+            <p>Why weren't you able to write today?</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Forgot" id="forgot-checkbox">
+                <label class="form-check-label" for="forgot-checkbox">
+                    I forgot.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Tired" id="tired-checkbox">
+                <label class="form-check-label" for="tired-checkbox">
+                    I was too tired.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Unmotivated" id="motivation-checkbox">
+                <label class="form-check-label" for="motivation-checkbox">
+                    I wasn't motivated.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Distracted" id="distracted-checkbox">
+                <label class="form-check-label" for="distracted-checkbox">
+                    I got distracted.
+                </label>
+            </div>
+            <p class="mt-3">Don't feel bad no matter the reason, but telling us why will help us help you accomplish
+                your goal!</p>
+            <button class="btn btn-primary" id="setback-submit-btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    <script src="js/index.js"></script> -->
+</body>
+
+</html>
