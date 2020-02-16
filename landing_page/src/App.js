@@ -13,7 +13,6 @@ function App() {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous" />
-    <link rel="stylesheet" href="./style.css" />
 
     <title>Vision by The Dream Treeam</title>
 <div className="parallax" style={{backgroundImage:KevinBackGround}}>
@@ -99,8 +98,8 @@ function App() {
             </ul>
             <ul className="copyright">
                 <li>&copy; The Dream Treeam </li>
-                <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-                <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+                {/*<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+                <li>Images: <a href="http://unsplash.com">Unsplash</a></li>*/}
             </ul>
         </div>
     </footer>
