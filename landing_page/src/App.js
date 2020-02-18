@@ -12,6 +12,8 @@ import zaijen from "./dev_pics/zaijen.jpg";
 import kevin from "./dev_pics/kevin.jpg";
 import howard from "./dev_pics/howard.jpg";
 import kishore from "./dev_pics/kishore.jpg";
+import cliffs from "./cliffs.jpg";
+import lake from "./frozen_lake.jpg";
 
 function App() {
     return (
@@ -59,7 +61,7 @@ function App() {
                                     <p className="sub-description">
                                         The International Platform Connecting YOU to Others Around the World... See a brighter
                                         future with VISION!
-                        </p>
+                                    </p>
                                 </div>
                                 <div className="col-md-6">
                                     <p>
@@ -88,9 +90,36 @@ function App() {
                     </section>
 
                     <section className="two clear-section">
+                        <h2>The Problem</h2>
                         <div className="row">
                             <div className="col-md-6">
-                                <h2>Solution Example 1</h2>
+                                <h3>Our World is Hurting</h3>
+                                <p>Climate Change is no longer debatable.<br />
+                                    The world is dying, and people know it.<br />
+                                    There is so much beauty that we stand to lose.
+                                </p>
+                            </div>
+                            <div className="col-md-6">
+                                <img src={lake} alt="A lake covered in snow" className="screenshots"></img>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <img src={cliffs} alt="Green cliffs on the water" className="screenshots"></img>
+                            </div>
+                            <div className="col-md-6">
+                                <h3>You Are Stronger Than You Know</h3>
+                                <p>What people do not know is their own ability.<br />
+                                    Too often, we believe we can not make a difference. <br />
+                                    With Vision, we aim to show you just how impactful <br />
+                                    you are, and how working together can save our plant.
+                                </p>
+                            </div>
+                        </div>
+                        <h2>The Solution</h2>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <h3>Solution Example 1</h3>
                                 <p>Here's a first screenshot of our solution, a website goal tracker with global features</p>
                             </div>
                             <div className="col-md-6">
@@ -102,7 +131,7 @@ function App() {
                                 <img src={Screenshot2} alt="A second screenshot of the landing page" className="screenshots"></img>
                             </div>
                             <div className="col-md-6">
-                                <h2>Solution Example 2</h2>
+                                <h3>Solution Example 2</h3>
                                 <p>Here's a second screenshot of our solution, farther in</p>
                             </div>
                         </div>
@@ -116,29 +145,31 @@ function App() {
 
                                     <img src={zaijen} alt="Zaijen Santos" />
                                     <p className="sub-description">
-                                        Zaijen <br/> Santos
+                                        Zaijen <br /> Santos
                                     </p>
 
                                 </div>
                                 <div className="col-md-3 profile-container">
                                     <img src={kevin} alt="Kevin Jerauld" />
                                     <p className="sub-description">
-                                        Kevin <br/> Jerauld
+                                        Kevin <br /> Jerauld
                                     </p>
                                 </div>
                                 <div className="col-md-3 profile-container">
                                     <img src={howard} alt="Howard Pu" />
                                     <p className="sub-description">
-                                        Howard <br/> Pu
+                                        Howard <br /> Pu
                                     </p>
                                 </div>
                                 <div className="col-md-3 profile-container">
                                     <img src={kishore} alt="Kishore Vasan" />
                                     <p className="sub-description">
-                                        Kishore <br/> Vasan
+                                        Kishore <br /> Vasan
                                     </p>
                                 </div>
                             </div>
+                            <h2 className="text-dark">Have any questions?</h2>
+                            <p>Feel free to contact us at airtightspring@gmail.com</p>
                         </div>
                     </section>
 
@@ -153,11 +184,12 @@ function App() {
                             <li><a href="#" className="icon fa-instagram"></a></li>
                         </ul>
                         <ul className="copyright">
-                            <li>&copy; The Dream Treeam </li>
-                            <li>This project is a part of the <a href="https://ischool.uw.edu/capstone">Capstone Project</a> course at the University of Washington Information School</li>
-                            {/*<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-                <li>Images: <a href="http://unsplash.com">Unsplash</a></li>*/}
+                            <li>&copy; The Dream Treeam</li>
+                            <li>Landscape Photos by Kevin</li>
+                            <li>Original Landing Page Design: <a href="http://templated.co">TEMPLATED</a></li>
                         </ul>
+                        <p>This project is a part of the <a href="https://ischool.uw.edu/capstone">Capstone Project</a> course at the University of Washington Information School</p>
+                        {/*<li>Images: <a href="http://unsplash.com">Unsplash</a></li>*/}
                     </div>
                 </footer>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

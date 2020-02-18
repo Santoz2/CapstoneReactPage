@@ -56,7 +56,7 @@ main {
 
 /* Heading Level 2 Style */
 
-h2 {
+h2, h3 {
   font-size: 2.5em;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.clear-section h2 {
+.clear-section h2, .clear-section h3 {
   color: #ffffff;
   display: inline-block;
   font-size: 3.5em;
@@ -103,7 +103,7 @@ h2 {
   .clear-section {
       padding: 7em 0 11em 0;
   }
-  .clear-section h2 {
+  .clear-section h2, .clear-section h3 {
       font-size: 2.5em;
   }
   .clear-section p {
@@ -124,7 +124,7 @@ h2 {
   .clear-section br {
       display: none;
   }
-  .clear-section h2 {
+  .clear-section h2, .clear-section h3 {
       font-size: 2.25em;
   }
   .clear-section p {
@@ -133,7 +133,7 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-  .clear-section h2 {
+  .clear-section h2, .clear-section h3 {
       font-size: 1em;
   }
   .clear-section p {
@@ -160,7 +160,7 @@ h2 {
 
 /*Font size for the heading in the bottom section*/
 
-.two h2 {
+.two h2, .two h3{
   font-size: 2.5em;
 }
 
@@ -302,7 +302,7 @@ ul.icons li .icon:before {
   border: solid black 1em;
 }
 
-.clear-section h2 {
+.clear-section h2, .clear-section h3{
   margin-top: 1em;
 }
 
@@ -312,4 +312,9 @@ ul.icons li .icon:before {
 
 .one h2{
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.one .screenshots {
+  border: solid black 0.4em;
 }
