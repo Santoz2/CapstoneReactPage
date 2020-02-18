@@ -63,7 +63,7 @@ h2 {
 
 /* Section One Style */
 
-#one {
+.one {
   color: #777;
   background-color: white;
   text-align: center;
@@ -146,27 +146,27 @@ h2 {
 
 /*Spacing for the sub description */
 
-#sub-description {
+.sub-description {
   text-transform: uppercase;
   font-size: 1.2em;
   padding-right: 2em;
 }
 
 @media (max-width: 978px) {
-  #sub-description {
+  .sub-description {
       padding-right: 0em;
   }
 }
 
 /*Font size for the heading in the bottom section*/
 
-#two h2 {
+.two h2 {
   font-size: 2.5em;
 }
 
 /* Fixes padding in the bottom section */
 
-#two {
+.two {
   padding: 6em 0 6em 0;
 }
 
@@ -292,4 +292,16 @@ ul.icons li .icon:before {
 
 .navbar-brand {
   font-size: 1.5em;
+}
+
+/* Screenshot spacing */
+
+.screenshots {
+  width: 60%;
+  margin: 2em;
+  border: solid black 1em;
+}
+
+.clear-section h2 {
+  margin-top: 1em;
 }
