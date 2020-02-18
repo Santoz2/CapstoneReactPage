@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "./static/css/main.97f2fa87.chunk.css",
-    "main.js": "./static/js/main.23420d9a.chunk.js",
-    "main.js.map": "./static/js/main.23420d9a.chunk.js.map",
+    "main.css": "./static/css/main.c31fc2a5.chunk.css",
+    "main.js": "./static/js/main.f2416923.chunk.js",
+    "main.js.map": "./static/js/main.f2416923.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.cc6b4a17.js",
     "runtime-main.js.map": "./static/js/runtime-main.cc6b4a17.js.map",
-    "static/js/2.0eb59ec0.chunk.js": "./static/js/2.0eb59ec0.chunk.js",
-    "static/js/2.0eb59ec0.chunk.js.map": "./static/js/2.0eb59ec0.chunk.js.map",
+    "static/js/2.5a31226c.chunk.js": "./static/js/2.5a31226c.chunk.js",
+    "static/js/2.5a31226c.chunk.js.map": "./static/js/2.5a31226c.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.ddcef70fda0dbe4eb6bf8f588d4a3fd0.js": "./precache-manifest.ddcef70fda0dbe4eb6bf8f588d4a3fd0.js",
+    "precache-manifest.8f2e1bd5899e53388c0e9ca1b952a1ee.js": "./precache-manifest.8f2e1bd5899e53388c0e9ca1b952a1ee.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.97f2fa87.chunk.css.map": "./static/css/main.97f2fa87.chunk.css.map",
-    "static/js/2.0eb59ec0.chunk.js.LICENSE.txt": "./static/js/2.0eb59ec0.chunk.js.LICENSE.txt",
+    "static/css/main.c31fc2a5.chunk.css.map": "./static/css/main.c31fc2a5.chunk.css.map",
+    "static/js/2.5a31226c.chunk.js.LICENSE.txt": "./static/js/2.5a31226c.chunk.js.LICENSE.txt",
+    "static/media/howard.jpg": "./static/media/howard.fa9f7625.jpg",
     "static/media/App.css": "./static/media/kevBanner.30581fd0.jpg",
+    "static/media/kevin.jpg": "./static/media/kevin.c6403d4d.jpg",
+    "static/media/kishore.jpg": "./static/media/kishore.b00be379.jpg",
     "static/media/screenshot.jpg": "./static/media/screenshot.de08b18e.jpg",
     "static/media/screenshot2.jpg": "./static/media/screenshot2.60aeb8e4.jpg",
-    "static/media/valley.jpg": "./static/media/valley.9ffbf058.jpg"
+    "static/media/valley.jpg": "./static/media/valley.9ffbf058.jpg",
+    "static/media/zaijen.jpg": "./static/media/zaijen.e9d328cb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cc6b4a17.js",
-    "static/js/2.0eb59ec0.chunk.js",
-    "static/css/main.97f2fa87.chunk.css",
-    "static/js/main.23420d9a.chunk.js"
+    "static/js/2.5a31226c.chunk.js",
+    "static/css/main.c31fc2a5.chunk.css",
+    "static/js/main.f2416923.chunk.js"
   ]
 }

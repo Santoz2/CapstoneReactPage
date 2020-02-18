@@ -305,3 +305,11 @@ ul.icons li .icon:before {
 .clear-section h2 {
   margin-top: 1em;
 }
+
+.profile-container p, .profile-container img{
+  width: 70%;
+}
+
+.one h2{
+  margin-bottom: 1.5em;
+}

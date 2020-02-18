@@ -8,6 +8,10 @@ import KevinBackGround from "./kevBanner.jpg";
 import Valley from "./valley.jpg";
 import Screenshot from "./screenshot.jpg";
 import Screenshot2 from "./screenshot2.jpg";
+import zaijen from "./dev_pics/zaijen.jpg";
+import kevin from "./dev_pics/kevin.jpg";
+import howard from "./dev_pics/howard.jpg";
+import kishore from "./dev_pics/kishore.jpg";
 
 function App() {
     return (
@@ -106,35 +110,33 @@ function App() {
 
                     <section className="one">
                         <div className="container">
+                            <h2 className="text-dark">Vision's Developers</h2>
                             <div className="row">
-                                <div className="col-md-6">
-                                    <h2 className="text-dark">About Vision</h2>
+                                <div className="col-md-3 profile-container">
+
+                                    <img src={zaijen} alt="Zaijen Santos" />
                                     <p className="sub-description">
-                                        The International Platform Connecting YOU to Others Around the World... See a brighter
-                                        future with VISION!
-                        </p>
+                                        Zaijen <br/> Santos
+                                    </p>
+
                                 </div>
-                                <div className="col-md-6">
-                                    <p>
-                                        Here at VISION we see the hope for a greener tomorrow. However… to reach this future we need
-                                        your help. There is no Earth 2. If our environmental
-                                        conditions continue to decline as they have been, there will be no going back. Together we
-                                        can
-                                        all join one VISION to guide our communities to a
-                                        future in which the Earth and people live hand in hand with sustainability at the core.
-                        </p>
-                                    <p>
-                                        With VISION join a community of others who want to make small changes in their everyday
-                                        lives to
-                                        help save our planet. Complete goals, join communities,
-                                        and work together to inspire change. The VISION Movement seeks to help show the world that
-                                        when
-                                        working together, people have the potential to a million
-                                        little drops in the bucket into a flood of change. We will be the difference we want to see
-                                        in
-                                        this world. The only question is -- do you want to help
-                                        VISION see this future?
-                        </p>
+                                <div className="col-md-3 profile-container">
+                                    <img src={kevin} alt="Kevin Jerauld" />
+                                    <p className="sub-description">
+                                        Kevin <br/> Jerauld
+                                    </p>
+                                </div>
+                                <div className="col-md-3 profile-container">
+                                    <img src={howard} alt="Howard Pu" />
+                                    <p className="sub-description">
+                                        Howard <br/> Pu
+                                    </p>
+                                </div>
+                                <div className="col-md-3 profile-container">
+                                    <img src={kishore} alt="Kishore Vasan" />
+                                    <p className="sub-description">
+                                        Kishore <br/> Vasan
+                                    </p>
                                 </div>
                             </div>
                         </div>
