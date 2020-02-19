@@ -37,6 +37,11 @@ body, input, select, textarea {
   /* RGB of 0,0,0 is black. */
 }
 
+/* Adds spacing to the top banner */
+#top-banner {
+  padding-top: 1.5em;
+}
+
 /* Custom styling for the buttons */
 
 .btn {
@@ -302,19 +307,23 @@ ul.icons li .icon:before {
   border: solid black 1em;
 }
 
+/* Add spacing to the headings in the clear sections */
 .clear-section h2, .clear-section h3{
   margin-top: 1em;
 }
 
+/* Fix the width of the profile images */
 .profile-container p, .profile-container img{
   width: 70%;
 }
 
+/* Fix the spacing in the solid white sections */
 .one h2{
   margin-bottom: 1.5em;
   margin-top: 1.5em;
 }
 
+/* Add a border to images on the page */
 .one .screenshots {
   border: solid black 0.4em;
 }

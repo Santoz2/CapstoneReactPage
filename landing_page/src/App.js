@@ -5,7 +5,7 @@ import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.m
 import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";*/
 import './App.css';
 import KevinBackGround from "./kevBanner.jpg";
-import Valley from "./valley.jpg";
+//import Valley from "./valley.jpg";
 import Screenshot from "./screenshot.jpg";
 import Screenshot2 from "./screenshot2.jpg";
 import zaijen from "./dev_pics/zaijen.jpg";
@@ -28,8 +28,8 @@ function App() {
                 <header>
                     <div id="top-banner" className="navbar navbar-expand-md navbar-dark sticky-top">
                         <div className="container-fluid">
-                            <h1 className="navbar-brand"><strong><a className="text-white" href="index.html">Vision</a></strong> by The
-                    Dream Treeam</h1>
+                            <h1 className="navbar-brand"><strong><a className="text-white" href="./index.html">Vision</a></strong> by The
+                                Dream Treeam</h1>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
@@ -38,7 +38,13 @@ function App() {
                             <nav className="collapse navbar-collapse" id="navbarResponsive">
                                 <ul className="navbar-nav ml-auto mr-2">
                                     <li className="nav-item active">
-                                        <a className="nav-link" href="./index.html">Home <span className="sr-only">(current)</span></a>
+                                        <a className="nav-link" href="./index.html">Home <span className="sr-only">Current</span></a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="./index.html">About</a>
+                                    </li>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="./index.html">Login</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -50,7 +56,7 @@ function App() {
                         <h2>Empowering the Environment, Together</h2>
                         <p>Build a community of climate enthusiasts, <br /> challenge your friends, and create change.
             </p>
-                        <button type="button" className="btn btn-danger">Explore Our Vision</button>
+                        <button type="button" className="btn btn-danger">Join Our Vision</button>
                     </section>
 
                     <section className="one">
@@ -179,9 +185,9 @@ function App() {
                 <footer id="footer">
                     <div className="container">
                         <ul className="icons">
-                            <li><a href="#" className="icon fa-facebook"></a></li>
-                            <li><a href="#" className="icon fa-twitter"></a></li>
-                            <li><a href="#" className="icon fa-instagram"></a></li>
+                            <li><a href="./index.html" className="icon fa-facebook"><span className="sr-only">Facebook</span></a></li>
+                            <li><a href="./index.html" className="icon fa-twitter"><span className="sr-only">Twitter</span></a></li>
+                            <li><a href="./index.html" className="icon fa-instagram"><span className="sr-only">Instagram</span></a></li>
                         </ul>
                         <ul className="copyright">
                             <li>&copy; The Dream Treeam</li>
