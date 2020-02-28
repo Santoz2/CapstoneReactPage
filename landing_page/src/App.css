@@ -327,3 +327,34 @@ ul.icons li .icon:before {
 .one .screenshots {
   border: solid black 0.4em;
 }
+
+/*
+//
+These are the styles for the login cards
+//
+*/
+
+.card{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30em;
+  background-color: rgba(0,0,0,0.5) !important;
+  text-align: left;
+  }
+  
+  .card h2 {
+      margin-top: 0.5em;
+      font-size: 2em;
+  }
+
+  .card label {
+    color: white;
+  }
+
+  .card input {
+    margin-bottom: 0.3em;
+  }
+
+  .card button {
+    margin-top: 1em !important;
+  }
